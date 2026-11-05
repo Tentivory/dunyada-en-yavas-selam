@@ -1,0 +1,21 @@
+name: Yavaş CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  selam-ver:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1  # Asla yetmez
+    steps:
+      - uses: actions/checkout@v4
+      - name: Python kur
+        run: pip install nothing
+      - name: En yavaş selamı söyle
+        run: python selam.py
+        # Bu step asla bitmez. Özelliktir.
+      - name: Başarı mesajı
+        run: echo "Başardık!"
