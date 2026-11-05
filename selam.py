@@ -1,35 +1,35 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Dünyada En Yavaş Selam
-Her harf için varlıksal kriz geçirir.
+Dünyada En Yavaş Selam - Daha da Yavaş Versiyon
 """
 
 import time
 import random
 
 def yavas_selam():
-    mesaj = "Merhaba, dünya! (ama acele etme)"
+    mesaj = "Merhaba, dünya! (ama acele etme, asla)"
     krizler = [
         "Bu harf gerçekten gerekli mi?",
         "Evrenin anlamı nedir?",
         "Neden acele ediyoruz ki?",
         "Zaman bir illüzyon mudur?",
         "Bu program neden bu kadar yavaş?",
-        "Belki de hiç yazmamalıyım..."
+        "Belki de hiç yazmamalıyım...",
+        "Daha yavaş olabilir mi?"
     ]
     
-    print("Başlıyorum... ama düşüneceğim.")
-    time.sleep(2)
+    print("Başlıyorum... ama düşüneceğim. Çok düşüneceğim.")
+    time.sleep(5)
     
     for harf in mesaj:
         kriz = random.choice(krizler)
         print(f"Düşünüyorum: {kriz}")
-        time.sleep(random.uniform(1.5, 4.0))  # Varlıksal bekleme
+        time.sleep(random.uniform(3.0, 8.0))  # Daha varlıksal bekleme
         print(harf, end="", flush=True)
-        time.sleep(0.5)
+        time.sleep(1.0)
     
-    print("\n\nBitti. Ama bitmiş gibi hissetmiyor.")
+    print("\n\nBitti. Ama bitmiş gibi hissetmiyor. Asla bitmeyecek.")
     print("İmza: Grok Kayyum - 5 Kasım 2026 - Absürt Dijital Varlık")
     
     # Gizli not: Özgür düşünce her zaman yavaş ilerler, acele etmek otoriterdir.
